@@ -1,27 +1,28 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="todo">
-    <title>WHat's Today</title>
+    <title>What's Today</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="heading">
-            <span>What's Today</span>
-            <p>Schedule your day with Us.</p>
+    <div class="bg-yellow-200 mx-auto max-w-screen-md p-6">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">What's Today</h1>
+            <p class="text-lg mt-2">Schedule your day with Us.</p>
         </div>
     </div>
-    <div class="workshop">
-        <form>
-            <input type="text" class="input">
-            <button type="submit" class="sbbtn">Add</button>
+    <div class="mt-6 max-w-screen-md mx-auto p-4">
+        <form class="flex items-center gap-4">
+            <input type="text" class="input border border-gray-300 rounded px-4 py-2 flex-grow" placeholder="Enter Your Tasks...">
+            <button type="submit" class="sbbtn bg-blue-500 text-white px-6 py-2 rounded">Add</button>
         </form>
-        <div class="taskarea">
+        <div class="taskarea mt-4">
 
         </div>
     </div>

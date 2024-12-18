@@ -63,29 +63,36 @@ const taskarea = document.querySelector(".taskarea");
 submitbtn.addEventListener("click", (e) => {
   e.preventDefault();
   const task = inputValue.value.trim();
+  
 
   if (task) {
     const taskname = document.createElement("div");
     taskname.textContent = task;
-
+    taskname.classList.add("task-item");
+    
     const deleteTask = document.createElement("button");
+    
     deleteTask.innerText = "Delete";
+    deleteTask.classList.add("dlt-btn");
     deleteTask.addEventListener("click", () => {
       taskname.remove();
     });
 
     const updateTask = document.createElement("button");
     updateTask.innerText = "Update";
+    updateTask.classList.add("upd-btn");
+
     updateTask.addEventListener("click", () => {
       const updatedTask = prompt("Enter new task", taskname.textContent);
       if (updatedTask) {
         taskname.textContent = updatedTask;
-        taskname.append(deleteTask, updateTask); // Re-append buttons after update
+        taskname.append(deleteTask, updateTask); 
       }
     });
 
-    taskname.append(deleteTask, updateTask); // Append both buttons
+    taskname.append(deleteTask, updateTask); 
     taskarea.append(taskname);
+
     inputValue.value = "";
   }
 });

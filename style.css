@@ -1,13 +1,48 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: black;
-    color: white;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.container {
+  max-width: 1240px;
+}
+.heading {
+  margin: 0;
+}
+.workshop {
+  margin: 0;
 }
 
-.taskarea{
-    width: 500px;
-    background-color: rgb(36, 38, 38);
-    height: 800px;
+.taskarea {
+  width: 100%;
+background-color: whitesmoke;
+  height: 800px;
+}
+
+.task-item{
+  display: flex;
+  border: 2px solid black;
+  margin: 10px;
+  gap: 10px;
+  
+
+  
+}
+
+
+.dlt-btn{
+  background-color: red;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 550px;
+}
+.upd-btn{
+  background-color: rgba(0, 0, 255, 0.377);
+  border-radius: 5px;
+  margin: 5px;
 }
